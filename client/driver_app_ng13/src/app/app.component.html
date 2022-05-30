@@ -1,0 +1,181 @@
+<ion-app dir="{{  appTitle }}">
+	<!-- when=false means that the split pane will never expand automatically -->
+	<!-- For more info check https://ionicframework.com/docs/api/split-pane -->
+
+	<ion-split-pane contentId="menu-content" when="false">
+		<ion-menu contentId="menu-content" class="app-sidemenu">
+			<!--<ion-header>
+				<ion-toolbar>
+					<ion-row class="user-details-wrapper">
+						<ion-col size="4">
+							<app-aspect-ratio [ratio]="{w: 1, h: 1}">
+								<app-image-shell
+									class="user-avatar"
+									animation="spinner"
+									[src]="'./assets/sample-images/ionicthemes_logo.jpg'"
+								>
+								</app-image-shell>
+							</app-aspect-ratio>
+						</ion-col>
+						<ion-col class="user-info-wrapper" size="8">
+							<h3 class="user-name">Driver Page</h3>
+							<h5 class="user-handle">@IonicThemes</h5>
+						</ion-col>
+					</ion-row>
+					<ion-row class="user-stats-wrapper user-details-wrapper">
+						<ion-col>
+							<span class="user-stat-value">12</span>
+							<span class="user-stat-name">Messages</span>
+						</ion-col>
+						<ion-col>
+							<span class="user-stat-value">1 / 12</span>
+							<span class="user-stat-name">Orders</span>
+						</ion-col>
+					</ion-row>
+				</ion-toolbar>
+			</ion-header> -->
+			<ion-content>
+				<ion-list>
+					<!--------------------------------------------->
+					<!--- Bookings -->
+					<!--------------------------------------------->
+					<ion-list-header>
+						<ion-label>Bokningar</ion-label>
+					</ion-list-header>
+					<ion-menu-toggle autoHide="false">
+						<ion-item [routerLink]="[]">
+							<ion-icon slot="start" name="newspaper" style="color: #000000"></ion-icon>
+							<ion-label>
+								Mina bokingar
+							</ion-label>
+						</ion-item>
+						<ion-item [routerLink]="[]">
+							<ion-icon slot="start" name="newspaper" style="color: #000000"></ion-icon>
+							<ion-label>
+								Förbeställningar
+							</ion-label>
+						</ion-item>
+					</ion-menu-toggle>
+				</ion-list>
+				<ion-list>
+					<!--------------------------------------------->
+					<!--- Bookings -->
+					<!--------------------------------------------->
+					<ion-list-header>
+						<ion-label>Skaffa pro</ion-label>
+					</ion-list-header>
+					<ion-menu-toggle autoHide="false">
+						<ion-item [routerLink]="[]">
+							<ion-label>
+								Köp PRO i 24 timmar för <b>100</b> SEK
+							</ion-label>
+						</ion-item>
+						<ion-item [routerLink]="[]">
+							<ion-label>
+								Köp PRO i en vecka för <b>500</b> SEK
+							</ion-label>
+						</ion-item>
+						<ion-item [routerLink]="[]">
+							<ion-label>
+								Köp PRO i en månad för <b>2000</b> SEK
+							</ion-label>
+						</ion-item>
+					</ion-menu-toggle>
+				</ion-list>
+				<ion-list>
+					<!--------------------------------------------->
+					<!--- Standard -->
+					<!--------------------------------------------->
+					<ion-list-header>
+					</ion-list-header>
+					<ion-menu-toggle autoHide="false">
+						<ion-item [routerLink]="[]">
+							<ion-icon slot="start" name="cash" style="color: #000000"></ion-icon>
+							<ion-label>
+								Hänvisa och tjäna
+							</ion-label>
+						</ion-item>
+						<ion-item [routerLink]="['/app/messages']">
+							<ion-icon slot="start" name="mail" style="color: #000000"></ion-icon>
+							<ion-label>
+								Meddelanden
+							</ion-label>
+						</ion-item>
+						<ion-item [routerLink]="['/forms-filters']">
+							<ion-icon slot="start" name="call" style="color: #000000"></ion-icon>
+							<ion-label>
+								Support
+							</ion-label>
+						</ion-item>
+						<ion-item [routerLink]="['/forms-filters']">
+							<ion-icon slot="start" name="card" style="color: #000000"></ion-icon>
+							<ion-label>
+								Kortdetaljer
+							</ion-label>
+						</ion-item>
+						<ion-item [routerLink]="['/forms-filters']">
+							<ion-icon slot="start" name="build" style="color: #000000"></ion-icon>
+							<ion-label>
+								Inställningar
+							</ion-label>
+						</ion-item>
+						<ion-item (click)="doLogout()">
+							<ion-icon slot="start" name="options-outline"></ion-icon>
+							<ion-label>
+								Logga ut
+							</ion-label>
+						</ion-item>
+						<ion-item [routerLink]="['/forms-filters']">
+							<ion-icon slot="start" name="options-outline"></ion-icon>
+							<ion-label>
+								Policy
+							</ion-label>
+						</ion-item>
+					</ion-menu-toggle>
+				</ion-list>
+			</ion-content>
+		</ion-menu>
+
+
+
+		<ion-router-outlet id="menu-content">
+		</ion-router-outlet>
+
+		<app-tabs></app-tabs>
+
+		<ion-tabs>
+			<ion-tab-bar slot="bottom">
+				<ion-tab-button tab="start" (click)="routeTab('/app/start')">
+					<ion-icon name="calendar"></ion-icon>
+					<ion-label>Start</ion-label>
+					<ion-badge>6</ion-badge>
+				</ion-tab-button>
+
+				<ion-tab-button tab="getpro" (click)="routeTab('/app/getpro')">
+					<ion-icon name="person-circle"></ion-icon>
+					<ion-label>Köp PRO</ion-label>
+					<ion-badge color="primary">11</ion-badge>
+				</ion-tab-button>
+
+				<ion-tab-button (click)="routeTab('/app/orders')">
+					<ion-icon name="map"></ion-icon>
+					<ion-label>Bokningar</ion-label>
+				</ion-tab-button>
+
+				<ion-tab-button tab="prebookings" (click)="routeTab('/app/orders#pre')">
+					<ion-icon name="information-circle"></ion-icon>
+					<ion-label>Förbokningar</ion-label>
+				</ion-tab-button>
+
+				<ion-tab-button tab="messages" (click)="routeTab('/app/messages')">
+					<ion-icon name="chatbox-outline"></ion-icon>
+					<ion-label>Meddelanden</ion-label>
+				</ion-tab-button>
+
+			</ion-tab-bar>
+		</ion-tabs>
+
+	</ion-split-pane>
+
+</ion-app>
+

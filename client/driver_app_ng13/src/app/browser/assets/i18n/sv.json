@@ -1,0 +1,15 @@
+{
+	"FOLLOW": "Follow",
+	"MESSAGE": "Message",
+	"LIKES" : "Likes",
+	"FOLLOWERS" : "Followers",
+	"FOLLOWING": "Following",
+	"ABOUT": "About",
+	"FRIENDS": "Friends",
+	"PHOTOS": "Photos",
+	"SEE_ALL": "See all",
+	"OK": "OK",
+	"CANCEL": "Cancel",
+	"SELECT_LANGUAGE": "Select your language",
+	"INTRO_SCREEN": "<div class=\"message\">Ver verkar som att du har problem med din GPS. Kontrollera att du gett Taxijakt-Appen tillåtelse till att använda GPSen, att även slå på WIFI rekommenderas"
+}

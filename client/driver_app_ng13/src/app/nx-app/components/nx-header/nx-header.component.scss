@@ -1,0 +1,37 @@
+
+ion-header {
+	.nx {
+		--background: #ffffff; // #ffa800;
+		padding: 10px;
+		box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 8px 12px rgb(0 0 0 / 4%);
+	}
+
+	.nx-sub {
+		--background: #ffe0a7;
+	}
+
+	/******************************
+	*
+	*  Blinking GPS WARNING
+	*
+	******************************/
+	@keyframes blinking {
+	0% {
+		background-color: #ff3d50;
+		color: #ddd;
+	}
+	100% {
+		background-color: #222291;
+		color: #fff;
+	}
+}
+	#gpsWarning {
+		font-size: 1.3em;
+		font-weight: bold;
+		padding: 10px;
+		/* NAME | TIME | ITERATION */
+		animation: blinking 1s infinite;
+	}
+}
+
+

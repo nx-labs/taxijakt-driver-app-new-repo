@@ -1,0 +1,1 @@
+sudo npm uninstall --save @angular/common @angular/forms@angular/client --force

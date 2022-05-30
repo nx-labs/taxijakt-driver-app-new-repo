@@ -1,0 +1,18 @@
+{
+  "FOLLOW": "Follow",
+  "MESSAGE": "Message",
+  "LIKES" : "Likes",
+  "FOLLOWERS" : "Followers",
+  "FOLLOWING": "Following",
+  "ABOUT": "About",
+  "FRIENDS": "Friends",
+  "PHOTOS": "Photos",
+  "SEE_ALL": "See all",
+  "OK": "OK",
+  "CANCEL": "Cancel",
+  "SELECT_LANGUAGE": "Select your language",
+  "INTRO_SCREEN": "<div class=\"message\">You seem to have problem with your GPS. Check that GPS, WIFI and all Location services are activated.<br><br>För bättre GPS - Ladda ner nya Taxijakt Driver 2.0.14 från Google Play</div>"
+
+
+
+}

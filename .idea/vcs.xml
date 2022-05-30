@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/NewDriverApp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/coldmind-tj" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ionic-mock" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/server/cm-framework/cm-mocking/json-server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/server/cm-framework/third-party/cm-rx-http" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tools/cm-cli" vcs="Git" />
+  </component>
+</project>

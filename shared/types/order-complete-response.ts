@@ -1,0 +1,91 @@
+export interface IOrderCompleteResponse {
+	status?:  string;
+	summary?: IOrderSummary;
+	order?:  IOrderResp
+}
+
+export interface IOrderResp {
+	id: string;
+	created: string;
+	dispatch_time: string;
+	cancelled?: any;
+	confirmed: string;
+	finished: string;
+	pickup_time: string;
+	estimated_pickup_time: string;
+	taxi_at_from_address: string;
+	taxi_at_from_address_min_distance: string;
+	taxi_at_from_address_min_distance_time: string;
+	taxi_at_to_address?: any;
+	taxi_at_to_address_min_distance: string;
+	taxi_at_to_address_min_distance_time: string;
+	from_address: string;
+	from_zipcode: string;
+	from_name: string;
+	from_formatted: string;
+	from_area: string;
+	from_lat: string;
+	from_lng: string;
+	carrier_id: string;
+	carrier_name: string;
+	invoice_id?: any;
+	carrier_fee?: any;
+	carrier_compensation?: any;
+	delivery_type: string;
+	urgent?: any;
+	urgent_distance?: any;
+	duplicate_of_order_id?: any;
+	app_version: string;
+	mode?: any;
+	country_code: string;
+	locale: string;
+	admin_id?: any;
+	closed?: any;
+	company_id?: any;
+	device_id?: any;
+	number_of_passengers?: any;
+	number_of_luggages?: any;
+	ref?: any;
+	accept_sms_id: string;
+	baby_seats?: any;
+	child_seats?: any;
+	booster_seats?: any;
+	animals_in_cage?: any;
+	animals_without_cage?: any;
+	combi?: any;
+	left_to_pay?: any;
+	payica_transaction_id?: any;
+	payica_card_id?: any;
+	secret: string;
+	domain: string;
+	signup_min_points: string;
+	points: string;
+	dialed_phone?: any;
+	partner_id?: any;
+	partner_reference_no?: any;
+	query_id: string;
+	message_to_driver?: any;
+	admin_note_id?: any;
+	accept_id: string;
+	success_id?: any;
+	taxi_company_customer_id?: any;
+	taxi_company_customer_no?: any;
+	allow_forwarding?: any;
+	vehicle_id: string;
+	rate_sms_id?: any;
+	status?: any;
+	is_phone_order: string;
+	customer_in_car?: any;
+	should_be_watched: string;
+	is_cancelled: string;
+	is_confirmed: string;
+	is_finished: string;
+}
+
+export interface IOrderSummary {
+	commission?:             number;
+	kickback?:               number;
+	possibleKickback?:       number;
+	currency?:               string;
+	isDriverPremiumAproved?: boolean;
+}

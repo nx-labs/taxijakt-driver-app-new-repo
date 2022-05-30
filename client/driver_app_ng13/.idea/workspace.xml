@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5d86588b-ca33-4079-baa4-a1b88d557f2f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="28My6ageaoRZxeFWzhtij7FF2AY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="excluded.www.directory" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/pages/terms-of-service" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../../shared/types" />
+      <recent name="$PROJECT_DIR$/src/app/nx-app/modals" />
+      <recent name="$PROJECT_DIR$/src/app/nx-app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/pages/terms-of-service" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d86588b-ca33-4079-baa4-a1b88d557f2f" name="Default Changelist" comment="" />
+      <created>1651040574325</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651040574325</updated>
+      <workItem from="1651040577069" duration="4286000" />
+      <workItem from="1651678095710" duration="168000" />
+      <workItem from="1651678688402" duration="22910000" />
+      <workItem from="1651790259083" duration="22024000" />
+      <workItem from="1651831589231" duration="2698000" />
+      <workItem from="1651878980526" duration="2558000" />
+      <workItem from="1651992772809" duration="8740000" />
+      <workItem from="1652168041625" duration="3700000" />
+      <workItem from="1652176692486" duration="58477000" />
+      <workItem from="1652808902239" duration="18535000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2078" y="662" key="#ESLint" timestamp="1652249913323">
+      <screen x="0" y="23" width="3440" height="1353" />
+    </state>
+    <state x="2078" y="662" key="#ESLint/0.23.3440.1353@0.23.3440.1353" timestamp="1652249913323" />
+    <state x="950" y="376" key="#Inspections" timestamp="1651042244689">
+      <screen x="0" y="23" width="3440" height="1353" />
+    </state>
+    <state x="950" y="376" key="#Inspections/0.23.3440.1353@0.23.3440.1353" timestamp="1651042244689" />
+    <state x="766" y="244" width="1525" height="897" key="SettingsEditor" timestamp="1652206459780">
+      <screen x="0" y="23" width="3440" height="1353" />
+    </state>
+    <state x="766" y="244" width="1525" height="897" key="SettingsEditor/0.23.3440.1353@0.23.3440.1353" timestamp="1652206459780" />
+    <state x="1072" y="406" width="794" height="634" key="find.popup" timestamp="1652827660538">
+      <screen x="0" y="23" width="3440" height="1353" />
+    </state>
+    <state x="558" y="48" width="783" height="837" key="find.popup/0.23.1792.1033@0.23.1792.1033" timestamp="1652186424257" />
+    <state x="1072" y="406" width="794" height="634" key="find.popup/0.23.3440.1353/3440.503.1536.937@0.23.3440.1353" timestamp="1652827660538" />
+    <state x="839" y="742" width="782" height="634" key="find.popup/0.23.3440.1353@0.23.3440.1353" timestamp="1652276081983" />
+    <state x="885" y="293" key="run.anything.popup" timestamp="1651796713671">
+      <screen x="0" y="23" width="3440" height="1353" />
+    </state>
+    <state x="885" y="293" key="run.anything.popup/0.23.3440.1353@0.23.3440.1353" timestamp="1651796713671" />
+    <state x="851" y="344" width="838" height="1032" key="search.everywhere.popup" timestamp="1652821737927">
+      <screen x="0" y="23" width="3440" height="1353" />
+    </state>
+    <state x="851" y="344" width="838" height="1032" key="search.everywhere.popup/0.23.3440.1353/3440.503.1536.937@0.23.3440.1353" timestamp="1652821737927" />
+    <state x="851" y="344" width="838" height="1032" key="search.everywhere.popup/0.23.3440.1353@0.23.3440.1353" timestamp="1652262148764" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/nx-app/modals/new-order-modal/new-order-modal.component.ts</url>
+          <line>349</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

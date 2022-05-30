@@ -1,0 +1,23 @@
+<nx-header></nx-header>
+
+<ion-content class="orders-content">
+
+	<ion-card>
+		<ion-card-header>
+			<h1>Bokningar</h1>
+		</ion-card-header>
+
+		<ion-card-content>
+
+			<div *ngIf="nxAppService.marketOrders.length === 0">
+				<h3>No orders</h3>
+			</div>
+
+			<ion-list>
+				<ion-item *ngFor="let order of nxAppService.marketOrders">
+					<ion-label>{{ order.id }}</ion-label>
+				</ion-item>
+			</ion-list>
+		</ion-card-content>
+	</ion-card>
+</ion-content>

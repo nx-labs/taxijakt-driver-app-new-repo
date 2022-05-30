@@ -1,0 +1,38 @@
+<ion-card class="card">
+  <ion-header>
+    <h3>You are busy</h3>
+  </ion-header>
+
+  <ion-card-content>
+    <div>
+      <h1>
+      {{ timerDisplay }}
+      </h1>
+    </div>
+
+    <div style="margin-top: 2em">
+      <ion-button (click)="extendByMin(7)" class="social-auth-btn facebook-auth-btn" expand="block" color="facebook">
+        Add 7 minutes
+      </ion-button>
+    </div>
+
+    <div style="margin-top: 2em">
+      <ion-button (click)="extendByMin(14)" class="social-auth-btn facebook-auth-btn" expand="block" color="twitter">
+        Add 14 minutes
+      </ion-button>
+    </div>
+
+    <div style="margin-top: 2em">
+      <ion-button (click)="extendByMin(28)" class="social-auth-btn facebook-auth-btn" expand="block" color="purple">
+        Add 28 minutes
+      </ion-button>
+    </div>
+
+    <div style="margin-top: 4em">
+      <ion-button (click)="setAvailable()" class="social-auth-btn facebook-auth-btn" expand="block" color="success">
+        Available
+      </ion-button>
+    </div>
+
+  </ion-card-content>
+</ion-card>

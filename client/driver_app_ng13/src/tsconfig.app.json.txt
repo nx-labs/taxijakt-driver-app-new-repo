@@ -1,0 +1,48 @@
+{
+	"compilerOptions":        {
+		"outDir":       "../out-tsc/app",
+		"baseUrl":      "./",
+		"paths":                        {
+			"@shared/*": [
+				"app/shared/*"
+			],
+			"@components/*": [
+				"app/components/*"
+			],
+			"@api/*":   [
+				"./app/api/*"
+			],
+			"@services/*":   [
+				"app/services/*"
+			],
+			"@utils/*":      [
+				"./app/core/utils/*"
+			],
+			"@nxApp/*":   [
+				"./app/nx-app/*"
+			],
+			"@core/*":   [
+				"./app/core/*"
+			],
+			"@env/*":      [
+				"../environments/*"
+			]
+
+		},
+		"skipLibCheck": true,
+		"types":        [
+			"googlemaps"
+		]
+	},
+	"files":                  [
+		"main.ts",
+		"polyfills.ts"
+	],
+	"include":                [
+		"src/**/*.d.ts",
+		"../../../shared/"
+	],
+	"angularCompilerOptions": {
+		"enableIvy": true
+	}
+}

@@ -1,0 +1,92 @@
+@import "../../../../theme/mixins/scrollbars";
+
+//
+// Progress Circle
+//
+.user-name {
+	font-size: 11pt;
+}
+
+@keyframes growProgressBar {
+	0%, 33% {
+		--pgPercentage: 0;
+	}
+	100% {
+		--pgPercentage: var(--value);
+	}
+}
+
+@property --pgPercentage {
+	syntax: '<number>';
+	inherits: false;
+	initial-value: 0;
+}
+
+div[role="progressbar"] {
+	--size: 12rem;
+	--fg: #369;
+	--bg: #def;
+	--pgPercentage: var(--value);
+	animation: growProgressBar 3s 1 forwards;
+	width: var(--size);
+	height: var(--size);
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	background: radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+	conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: calc(var(--size) / 5);
+	color: var(--fg);
+}
+
+div[role="progressbar"]::before {
+	counter-reset: percentage var(--value);
+	content: counter(percentage) '%';
+}
+
+//
+//
+
+// Custom variables
+// Note:  These ones were added by us and have nothing to do with Ionic CSS Custom Properties
+:host {
+	--page-margin: var(--app-narrow-margin);
+	--page-categories-gutter: calc(var(--page-margin) / 4);
+	--page-category-background: var(--ion-color-medium);
+	--page-category-background-rgb: var(--ion-color-medium-rgb);
+}
+
+// Note:  All the CSS variables defined below are overrides of Ionic elements CSS Custom Properties
+.categories-list {
+	--ion-grid-column-padding: var(--page-categories-gutter);
+
+	padding: calc(var(--page-categories-gutter) * 3);
+	height: 100%;
+	align-content: flex-start;
+	overflow: scroll;
+
+	@include hide-scrollbars();
+
+	.category-item {
+		.category-anchor {
+			height: 100%;
+			text-decoration: none;
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+
+			.category-title {
+				margin: auto;
+				text-transform: uppercase;
+				font-weight: 400;
+				font-size: 18px;
+				letter-spacing: 1px;
+				padding: calc((var(--page-margin) / 4) * 3) var(--page-margin);
+				color: var(--ion-color-lightest);
+				background-color: var(--page-category-background);
+				border-radius: var(--app-fair-radius);
+			}
+		}
+	}
+}

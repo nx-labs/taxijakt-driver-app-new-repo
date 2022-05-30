@@ -1,0 +1,195 @@
+<nx-header></nx-header>
+
+<ion-content class="user-profile-content">
+
+<!--
+	<ion-header>
+		<ion-toolbar>
+			<ion-grid>
+				<ion-col>
+					<ion-thumbnail slot="start">
+						<ion-img [src]="driverModel?.userImage"></ion-img>
+					</ion-thumbnail>
+				</ion-col>
+			</ion-grid>
+
+		</ion-toolbar>
+
+		<ion-toolbar>
+			<ion-list no-lines>
+				<ion-item>
+					<ion-thumbnail slot="start">
+						<ion-img [src]="driverModel?.userImage"></ion-img>
+					</ion-thumbnail>
+					<ion-label>
+						<ion-label>{{ driverModel?.name }}</ion-label>
+
+
+					</ion-label>
+					<ion-label>
+						<ion-btn class="nx-driver-status-button">
+						</ion-btn>
+
+
+					</ion-label>
+				</ion-item>
+			</ion-list>
+		</ion-toolbar>
+	</ion-header>
+		-->
+
+
+	<ion-row class="user-details-section">
+		<ion-col class="user-image-wrapper">
+			<ion-img [src]="driverModel?.userImage" style="max-width: 120px"></ion-img>
+
+			<!--
+			<app-aspect-ratio [ratio]="{w: 1, h: 1}">
+				<app-image-shell class="user-image" animation="spinner"
+								 [src]="driverModel?.userImage"></app-image-shell>
+			</app-aspect-ratio>
+			-->
+		</ion-col>
+		<ion-col class="user-info-wrapper">
+			<ion-row class="user-data-row">
+				<ion-col size="9">
+					<h3 class="user-name">
+						Driver #{{driverModel?.id}}
+						<app-text-shell [data]="driverModel?.name"></app-text-shell>
+					</h3>
+					<h5 class="user-title">
+						<app-text-shell [data]="driverModel?.job"></app-text-shell>
+					</h5>
+				</ion-col>
+				<!--
+				<ion-col class="membership-col">
+					<span class="user-membership">
+						<app-text-shell [data]="driverModel?.membership"></app-text-shell>
+					</span>
+				</ion-col>
+				-->
+			</ion-row>
+			<!--
+			<ion-row class="actions-row">
+				<ion-col class="main-actions">
+					<ion-button class="call-to-action-btn" size="small"
+								color="primary">{{ 'FOLLOW' | translate }}</ion-button>
+					<ion-button class="call-to-action-btn" size="small"
+								color="medium">{{ 'MESSAGE' | translate }}</ion-button>
+				</ion-col>
+				<ion-col class="secondary-actions">
+					<ion-button class="more-btn" size="small" fill="clear" color="medium"
+								(click)="openLanguageChooser()">
+						<ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+					</ion-button>
+				</ion-col>
+			</ion-row>
+			-->
+		</ion-col>
+	</ion-row>
+<!--	<ion-row class="user-stats-section">
+		<ion-col class="user-stats-wrapper" size="4">
+      <span class="stat-value">
+        <app-text-shell [data]="driverModel?.likes"></app-text-shell>
+      </span>
+			<span class="stat-name">{{ 'LIKES' | translate }}</span>
+		</ion-col>
+		<ion-col class="user-stats-wrapper" size="4">
+      <span class="stat-value">
+        <app-text-shell [data]="driverModel?.followers"></app-text-shell>
+      </span>
+			<span class="stat-name">{{ 'FOLLOWERS' | translate }}</span>
+		</ion-col>
+		<ion-col class="user-stats-wrapper" size="4">
+      <span class="stat-value">
+        <app-text-shell [data]="driverModel?.following"></app-text-shell>
+      </span>
+			<span class="stat-name">{{ 'FOLLOWING' | translate }}</span>
+		</ion-col>
+	</ion-row>
+	-->
+
+	<ion-card>
+		<ion-card-header>
+		</ion-card-header>
+
+
+		<!--
+
+		<ion-segment disabled value="sunny">
+			<ion-segment-button value="sunny">
+				<ion-label>Alla</ion-label>
+			</ion-segment-button>
+			<ion-segment-button value="rainy">
+				<ion-label>Nya</ion-label>
+			</ion-segment-button>
+			<ion-segment-button value="rainy">
+				<ion-label>Historik</ion-label>
+			</ion-segment-button>
+		</ion-segment>
+
+		<ion-card class="cp" background-color="#000">
+			<ion-grid>
+				<ion-row>
+					<ion-col>
+						<ion-icon name="time-outline"></ion-icon>
+					</ion-col>
+					<ion-col>
+						<h4>Ny beställning</h4>
+						<h5>1 KM</h5>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card>
+		<ion-card (click)="newOrderOpen()">
+			<h4>Ny beställning</h4>
+			<h5>1 KM</h5>
+		</ion-card>
+		-->
+
+	</ion-card>
+
+	<ion-card>
+		<ion-progress-bar></ion-progress-bar>
+
+		<!-- Default Progressbar with 50 percent -->
+		<ion-progress-bar value="0.5"></ion-progress-bar>
+
+		<!-- Colorize Progressbar -->
+		<ion-progress-bar color="primary" value="0.5"></ion-progress-bar>
+		<ion-progress-bar color="secondary" value="0.5"></ion-progress-bar>
+
+		<!-- Other types -->
+		<ion-progress-bar value="0.25" buffer="0.5"></ion-progress-bar>
+		<ion-progress-bar type="indeterminate"></ion-progress-bar>
+		<ion-progress-bar type="indeterminate" reversed="true"></ion-progress-bar>
+
+		<ion-card-heades>
+			Få 15% i provision
+			<ion-progress-bar value="0.5"></ion-progress-bar>
+		</ion-card-heades>
+	</ion-card>
+
+
+
+	<!-- MOVE TO PROFILE CARD --
+	<div class="user-about-section">
+		<h3 class="details-section-title">{{ 'ABOUT' | translate }}</h3>
+		<p class="user-description">
+			<app-text-shell animation="bouncing" lines="4" [data]="driverModel?.about"></app-text-shell>
+		</p>
+	</div>
+	-->
+
+	<!--
+	<ion-card>
+		<ion-card-header>
+			<ion-img src="/assets/nx-app/svg/ico-promotions.svg" style="width: 64px;"></ion-img>
+		</ion-card-header>
+
+		<ion-button (click)="sendTestEvent()">Test Event</ion-button>
+	</ion-card>
+	-->
+
+
+</ion-content>

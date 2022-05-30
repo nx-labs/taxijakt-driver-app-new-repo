@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+		"types": ["node", "reflect-metadata"],
+		"module": "commonjs",
+		"target": "es6",
+		"noImplicitAny": false,
+		"sourceMap": false,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"outDir": "./dist",
+		"baseUrl": "./",
+		"paths": {
+			"@shared/*"         : ["./shared/*"],
+			"@common/*"         : ["./shared/common/*"],
+			"@cmLib/*"          : ["./cm-framework/cmlib/*"],
+			"@cmUtils/*"        : ["./cm-framework/utils/*"],
+			"@cmCore/*"         : ["./cm-framework/server-core/*"],
+			"@cmRest/*"         : ["./cm-framework/rest-api/*"],
+			"@cmEvents/*"       : ["./cm-framework/events/*"],
+
+			"@app/*"            : ["./app-server/*"],
+			"@webapp/*"         : ["./app/webapp/*"],
+			"@taxijakt/*"       : ["./app-server/php-web-integration/*"]
+
+		}
+	},
+	"exclude": [
+		"customer-app-cli",
+		"third-party",
+		"./cm-framework/third-party/*",
+		"cm-mocking",
+		"test",
+		"cli",
+		"node_modules"
+	]
+}

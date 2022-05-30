@@ -1,0 +1,79 @@
+<nx-header [onlyLogo]="true"></nx-header>
+
+<ion-content class="login-content">
+
+	<div class="card">
+
+		<ion-card class="card">
+
+			<ion-card-header color="tj">
+				<ion-label style="font-weight: bold">Driver Login</ion-label>
+			</ion-card-header>
+
+			<form [formGroup]="loginForm" (ngSubmit)="doLogin()" class="card-form">
+				<div class="input">
+					<ion-input type="text"
+							   class="input-field"
+							   value=""
+							   formControlName="email"></ion-input>
+					<label class="input-label">Telefonnummer</label>
+				</div>
+
+				<div class="error-container">
+					<ng-container *ngFor="let validation of validation_messages.email">
+						<div class="error-message"
+							 *ngIf="loginForm.get('email').hasError(validation.type) && (loginForm.get('email').dirty || loginForm.get('email').touched)">
+							<ion-icon name="information-circle-outline"></ion-icon>
+							<span>{{ validation.message }}</span>
+						</div>
+					</ng-container>
+				</div>
+
+				<div class="input">
+					<ion-input type="password" formControlName="password" class="input-field"></ion-input>
+					<label class="input-label">Password</label>
+				</div>
+
+				<div class="error-container">
+					<ng-container *ngFor="let validation of validation_messages.password">
+						<div class="error-message"
+							 *ngIf="loginForm.get('password').hasError(validation.type) && (loginForm.get('password').dirty || loginForm.get('password').touched)">
+							<ion-icon name="information-circle-outline"></ion-icon>
+							<span>{{ validation.message }}</span>
+						</div>
+					</ng-container>
+				</div>
+
+				<div class="action">
+					<ion-button type="submit" class="social-auth-btn facebook-auth-btn" expand="block" color="facebook" [disabled]="!loginForm.valid">
+						Log in
+					</ion-button>
+				</div>
+
+				<div style="margin-top: 2em;">
+					<ion-button class="social-auth-btn google-auth-btn" expand="block" color="white" [routerLink]="['/auth/forgot-password']">
+						Get new password
+					</ion-button>
+				</div>
+
+			</form>
+		</ion-card>
+
+		<ion-card class="card" style="margin-top: 0">
+			<ion-card-header>
+				Do you want to drive for TaxiJakt?
+			</ion-card-header>
+
+			<div style="">
+				<ion-button class="social-auth-btn" expand="block" color="tj" [routerLink]="['/auth/forgot-password']">
+					Register as a Driver
+				</ion-button>
+			</div>
+
+		</ion-card>
+
+		<div class="card-info" style="margin-top: 0">
+			<p style="color: #f4f5f8; font-weight: bold; margin: 0">By using this app you are agreeing to our <a style="color: #f4f5f8; text-decoration: underline" (click)="showTerms()">Terms and Conditions</a></p>
+		</div>
+	</div>
+</ion-content>

@@ -1,0 +1,50 @@
+{
+	"extends":                "../tsconfig.json",
+	"compilerOptions":        {
+		"outDir":       "../out-tsc/app",
+		"baseUrl":      "./",
+		"paths":                        {
+			"@shared/*": [
+				"../../../shared/*"
+			],
+			"@root/*": [
+				"./app/*"
+			],
+			"@api/*": [
+				"./app/api/*"
+			],
+			"@components/*": [
+				"app/components/*"
+			],
+			"@services/*":   [
+				"app/services/*"
+			],
+			"@utils/*":      [
+				"./app/core/utils/*"
+			],
+			"@nxApp/*":   [
+				"./app/nx-app/*"
+			],
+			"@core/*":   [
+				"./app/core/*"
+			],
+			"@env/*":      [
+				"../environments/*"
+			]
+		},
+		"skipLibCheck": true,
+		"types":        [
+			"googlemaps"
+		]
+	},
+	"files":                  [
+		"main.ts",
+		"polyfills.ts"
+	],
+	"include":                [
+		"src/**/*.d.ts"
+	],
+	"angularCompilerOptions": {
+		"enableIvy": true
+	}
+}

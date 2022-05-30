@@ -1,0 +1,21 @@
+<nx-header></nx-header>
+
+<ion-content>
+	<ion-card>
+		<ion-card-header>
+			<h2>Messages</h2>
+		</ion-card-header>
+		<ion-card-content>
+
+			<div *ngIf="appData.messages.length === 0">
+				<b>No Messages</b>
+			</div>
+
+			<ion-list>
+				<ion-item *ngFor="let mess of appData.messages"></ion-item>
+			</ion-list>
+
+
+		</ion-card-content>
+	</ion-card>
+</ion-content>

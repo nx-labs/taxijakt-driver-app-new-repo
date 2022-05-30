@@ -1,0 +1,14 @@
+/**
+ * Copyright (c) 2021 Netix AB. -  Patrik Forsberg <patrik.forsberg@coldmind.com>
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential.
+ */
+
+import { PhpClient }  from "@taxijakt/php-web-integration/php-client";
+import { injectable } from "tsyringe";
+
+@injectable()
+export class PhpLegacyApi {
+	constructor(private client: PhpClient) {
+	}
+}

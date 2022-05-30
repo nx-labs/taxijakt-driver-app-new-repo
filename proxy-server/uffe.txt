@@ -1,0 +1,161 @@
+/**
+
+Nu har jag kollat mina och Gunillas anteckningar och det är tydligt att du
+dels tagit betalt även medans du suttit och lunchat.
+
+Det är smått uppkäftigt att du tänkte dig att jag skulle betala för din soppa
+när du kommer och kollar på jobbet!
+
+Här kommer dina faktiska timmar, antagligen så har
+du rundat upp och även tagit betalt för restid, annars
+fattar jag inte hur du fått ihop dina timmar.
+
+Mån: 12/4 = - 
+Tis: 12/4 = 6:30 tim
+Ons: 13/4 = 2:40 tim
+Tis: 19/4 = 6:45 tim
+
+Tis 26/4 = 7:30 tim
+Ons 27/4 = 5 tim
+
+Summering: 27.45 timmar och det blir 5490 kr
+
+Lampan du hade sönder som var en lampa från Hemtex tydligen som kostat
+över 1000 spänn men vi säger 1000kr jämt där.
+
+Klossen du kapade sönder: 189kr
+
+Sen har du fått 2000 redan så det blir då: 2301 spänn till
+som du ska ha.
+
+
+
+Och för ett glassjobb där du stått och kapat lister
+
+Sen kommer jag dra av för det jag fått fixa efter dig, t ex att
+do kapat fodret i badrummet i olika längder, fel längd i tvättstugan
+(vi enades om att ta upp dem en bit från golvet)
+
+Lampan du hade sönder som var en lampa från Hemtex tydligen som kostat
+över 1000 spänn men vi säger 1000kr jämt där.
+
+Klossen du kapade sönder: 189kr
+
+Vad blir det då, typ 2000 spänn till?
+
+för:
+
+2 mindre rum,
+1 Gästrum
+2 Sovrum
+1 Mindre övre hall som bara hade 3 väggar
+* Och sedan påbörjat jobb nere som är totalt ofärdigt.
+
+Det är ju 1000 :- per rum rak ner i fickan! Säg inte att
+det inte är fair när man gör sin polare en tjänst och åker hem
+till honom men känner att jag nog ändå behäver ta en slant för detta.
+
+Med din totalt oacceptabla "runda av uppåt", dvs jag ska betala dig
+även när du inte jobbar? Det kan du glömma, det kan inte jag heller göra
+med mina uppdragsgivare.
+
+Det du begärde av mig i svart timlön motsvarar en "normal"-lön på 35:000kr
+före skatt om man räknar om det.
+
+Sedan så  slutförde du inte jobbet, den extra sockel jag köpt
+stod lutad med baksidan utåt i tvättstugan, var ärlig och säg
+som det är att du var lite less när du skulle gera under trappen. Så nu ska jag
+lik förbannat börja fixa med detta trots att hela idén var att jag inte skulle
+ behöva göra det!
+
+På eftermiddagarna har det inte varit lika hög verkningsgrad och
+det var väl inte ritigt så här jag tänkt mig det hela, du sa jamen typ 200 spänn timmen,
+som ett riktmärke tänkte jag.
+
+Du istället tänkte de här har stålar så nu ska jag utnyttja läget, den gör jag inte om,
+du kommer få skäligt betalt enl våra anteckningar.
+
+PLUS:
+För det du faktiskt gjort bra och det blev bra, du var väldigt trrevlig och vi gillade dig
+
+MINUS:
+För det du gjort mindre bra, nu ska jag ju tex slita loss fodret inne i badrummet (öp) för att
+kapa det i samma läng som det på andra sidan, på toaletten nere samma sak för här har du ju nitat
+fast det ordentligt så vi får se hur fodret ser ut när det är loss.
+
+Sedan var sockeln flera centimeter för kort mellan dörrarna övre sovrum, så du måste jag
+ju börja med det.
+
+Klossarna som jag var och köpte och du sågade fel, de står du givetvis också stå för (189 kr),
+Sedan slog du sönder Dinas lampa som tydligen var från Hemtex och kostat 1390 kr,
+det var hon mindre glad för och det åker från din ersättning också, givetvis inget du ville
+nämna själv.
+
+Istället är du så hetsig över dessa pengar att du oanmäld kommer hem till oss,
+sådant gillas inte, för att sedan skicka 2 sms på kvällen och ytterligare hetsa då
+du vet att jag är full i jobb och inte ens hunnit gå igenom jobbet eller vååra anteckningar,
+det var väl därför det var bråttom.
+
+Jag har en påtaglig känsla av att du försökt utnyttja mig och det gillas inte.
+
+Detta är ingen diskussion utan det är slutord och slutbetalning har du några problem
+ med det så får du ta upp det med din fack-representant eller ringa polisen för det blir inget
+ mer, jag är fruktansvärt uppretad över att du dyker upp här oinbjuden och ska ha min fru att
+ börja swisha när vi inte hunnit få in pengar mrdans hon går och bär på en bebis dessutom...
+
+ du ljuger (givetvis) och säger att du tagit alla dina sista pengar till en ny såg
+ och MÅSTE nu ha detta... gillar inte heller när man ljuger för mig.
+
+Så med lampan som du förstörde (som var egendom) + klossrna
+
+ Så med det avdraget (5110kr - 1390kr - 189kr) så landar vi på 3531 kr
+ varav du redan fått 2000 så det är 1531 spänn till du ska ha!
+
+Sammantaget så blev det ju inte så bra detta, hade du varit fair så hade min bild av dig
+varit fortsatt positiv av dig.
+
+Ha det så bra och lycka till med nya sågen!
+
+
+
+
+
+
+ */
+
+const fetch = require('node-fetch');
+
+const URL_DOC = "https://dev.taxijakt.se/zf/driver/web/";
+
+export class fetchy {
+
+	public async doIt() {
+		const response = await fetch('https://httpbin.org/post', {method: 'POST', body: 'a=1'});
+
+		await fetch("https://dev.taxijakt.se/zf/driver/web/", {
+			"headers"  : {
+				"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:100.0) Gecko/20100101 Firefox/100.0",
+				"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+				"Accept-Language": "en-US,en;q=0.5",
+				"Upgrade-Insecure-Requests": "1",
+				"Sec-Fetch-Dest": "document",
+				"Sec-Fetch-Mode": "navigate",
+				"Sec-Fetch-Site": "none",
+				"Sec-Fetch-User": "?1",
+				"credentials": "include"
+			},
+			"method": "GET",
+	//		"mode": "cors",
+
+
+		});
+
+		const data = await response.json();
+
+		console.log(data);
+
+	}
+}
+
+new fetchy();
+

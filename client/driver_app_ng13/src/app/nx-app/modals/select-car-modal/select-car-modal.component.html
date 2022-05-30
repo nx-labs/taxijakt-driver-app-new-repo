@@ -1,0 +1,76 @@
+
+
+<div class="inner-content">
+	<ion-card *ngIf="!currentCar">
+		<ion-card-header>
+			<ion-label>Välj bil</ion-label>
+		</ion-card-header>
+
+		<ion-list no-lines *ngFor="let car of cars">
+			<ion-item lines="none" (click)="selectCar(car)">
+				<div class="car-plate">
+					<div class="codepen-wrapper">
+						<span class="registration-ui">{{ car.registration_number }}</span>
+					</div>
+				</div>
+			</ion-item>
+
+
+		</ion-list>
+	</ion-card>
+
+	<ion-card *ngIf="carModel !== null">
+		<ion-card-header>
+			<ion-label>Välj bil</ion-label>
+		</ion-card-header>
+
+		<ion-list>
+			<ion-item>
+				<ion-label>Baby seats (backward facing)</ion-label>
+
+				<ion-select [(ngModel)]="carModel.babySeats">
+					<ion-select-option value="0">0</ion-select-option>
+					<ion-select-option value="1">1</ion-select-option>
+					<ion-select-option value="2">2</ion-select-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label>Child seats (forward facing)</ion-label>
+				<ion-select value="brown" okText="OK" cancelText="Cancel" [(ngModel)]="carModel.childSeats">
+					<ion-select-option value="0">0</ion-select-option>
+					<ion-select-option value="1">1</ion-select-option>
+					<ion-select-option value="2">2</ion-select-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label>Booster seats</ion-label>
+				<ion-select value="0" okText="OK" cancelText="Cancel" [(ngModel)]="carModel.boosterSeats">
+					<ion-select-option value="0">0</ion-select-option>
+					<ion-select-option value="1">1</ion-select-option>
+					<ion-select-option value="2">2</ion-select-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label>Car with Shield</ion-label>
+				<ion-checkbox slot="end" color="primary" [checked]="carModel.hasShield"  [(ngModel)]="carModel.hasShield"></ion-checkbox>
+			</ion-item>
+
+
+			<ion-item>
+				<ion-label>Animals in Cage</ion-label>
+				<ion-checkbox slot="end" [(ngModel)]="carModel.animalsInCage"></ion-checkbox>
+			</ion-item>
+
+			<ion-item>
+				<ion-label>Animals without Cage</ion-label>
+				<ion-checkbox slot="end" [(ngModel)]="carModel.animalsWhitoutCaghe"></ion-checkbox>
+			</ion-item>
+		</ion-list>
+
+		<ion-button class="submit-btn" (click)="saveCar()" expand="block" color="facebook" type="submit" fill="solid">UPDATE</ion-button>
+
+	</ion-card>
+</div>

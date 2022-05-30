@@ -1,0 +1,48 @@
+:host {
+	--page-margin: var(--app-broad-margin);
+	--page-background: #ffffff; //#e1902f;
+
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+ion-card {
+	--ion-background-color: #ffffff;
+	background: #ffffff;
+}
+
+
+ion-title {
+	// Adding !important to force precedence in SSR
+	font-weight: 400 !important;
+	letter-spacing: 0.4px !important;
+}
+
+// Override Ionic styles
+.input-clear-icon {
+	// Change these properties so the Ionic close icon aligns with show/hide password
+	&.sc-ion-input-ios,
+	&.sc-ion-input-md {
+		width: calc(1.2rem);
+		margin-inline-start: .5rem;
+	}
+}
+
+ion-header {
+	--ion-background-color:       #ffffff;
+	background-color: #ffffff; // #e0d10f;
+}
+
+
+ion-toolbar {
+	--ion-background-color:       #b0c4de !important;
+	background-color: #ffffff; // #e0d10f;
+}
+
+ion-card {
+	padding: 2rem auto;
+	background: #ffffff !important;
+}
+

@@ -1,0 +1,60 @@
+{
+	"compileOnSave":   true,
+	"compilerOptions": {
+		"downlevelIteration":           true,
+		"importHelpers":                true,
+		"outDir":                       "./dist",
+		"sourceMap":                    false,
+		"declaration":                  false,
+		"target":                       "es2015",
+		"module":                       "es2020",
+		"moduleResolution":             "node",
+		"lib":                          [
+			"es2018",
+			"dom"
+		],
+		"allowSyntheticDefaultImports": true,
+		"emitDecoratorMetadata":        true,
+		"experimentalDecorators":       true,
+		"baseUrl":                      "./",
+		"types": [
+			"googlemaps"
+		],
+		"paths": {
+			"@shared/*":   [
+				"../../shared/*"
+			],
+			"@root/*":   [
+				"src/app/*"
+			],
+			"@core/*":   [
+				"src/app/core/*"
+			],
+			"@services/*":   [
+				"src/app/services/*"
+			],
+			"@components/*": [
+				"src/app/components/*"
+			],
+			"@nxApp/*":   [
+				"src/app/nx-app/*"
+			],
+			"@utils/*":      [
+				"src/app/core/utils/*"
+			],
+			"@env/*":      [
+				"environments/*"
+			]
+
+		},
+		"typeRoots":                    [
+			"node_modules/@types"
+		]
+	},
+	"angularCompilerOptions": {
+		"enableI18nLegacyMessageIdFormat": false,
+		"strictInjectionParameters": true,
+		"strictInputAccessModifiers": true,
+		"strictTemplates": false
+	}
+}

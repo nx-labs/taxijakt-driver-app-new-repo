@@ -1,0 +1,26 @@
+<ion-header class="nx" [class]="nxHeaderClass">
+	<ion-toolbar style="background: #ffffff;" class="nx">
+		<ion-title>
+			<img alt="logo" style="display: block; margin: 0 auto;" height="40" src="/assets/nx-app/nx-app-logo.png" >
+		</ion-title>
+	</ion-toolbar>
+
+	<ion-toolbar *ngIf="!onlyLogo" class="nx-sub">
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>
+			{{ title }}
+		</ion-title>
+		<ion-chip slot="end">
+			<ion-icon name="trophy-outline"></ion-icon>
+			<ion-label><b>{{ points }}</b> Points</ion-label>
+		</ion-chip>
+		<ion-chip slot="end">
+			{{ membership }}
+		</ion-chip>
+	</ion-toolbar>
+	<ion-toolbar *ngIf="warningVisible()">
+		GPS FAILURE
+	</ion-toolbar>
+</ion-header>

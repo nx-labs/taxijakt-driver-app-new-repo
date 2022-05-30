@@ -1,0 +1,103 @@
+<ion-content *ngIf="orderCompleted !== null">
+	<ion-card>
+		<h3>Order #{{ this.orderCompleted.order.id }} completed</h3>
+
+		<div>
+
+
+		</div>
+
+		{{ this.orderCompleted.summary?.commission }}
+		{{ this.orderCompleted.summary?.currency }}
+
+		<ion-button (click)="dismiss()" type="button" class="social-auth-btn facebook-auth-btn" expand="block" color="facebook">
+			OK
+		</ion-button>
+	</ion-card>
+</ion-content>
+
+<ion-content *ngIf="isActive && !orderCompleted" style="height: 100%">
+
+	<ion-card>
+		<h3>{{ data.orderData.id }}</h3>
+		<ion-card-header>
+			Customer {{ data.orderData.customer_phone }}
+		</ion-card-header>
+
+		<ion-card-content>
+			<div>
+				Från: {{ this.data.orderData.from_formatted }}
+			</div>
+
+			<div style="margin-top: 2em">
+				Till: {{ this.data.orderData.to_formatted }}
+			</div>
+
+		</ion-card-content>
+
+		<app-google-map [mapOptions]="mapOptions"></app-google-map>
+
+		<ion-card *ngIf="customerInCar">
+			<div>
+				<b>{{ this.data.orderData.customer_name }}</b>
+
+			</div>
+
+		</ion-card>
+
+		<div>
+			<ion-label></ion-label>
+
+			<div *ngIf="!customerInCar">
+				<ion-button (click)="setCustomerInCar()" type="button" class="social-auth-btn facebook-auth-btn"
+							expand="block" color="facebook">
+					Customer is in the car
+				</ion-button>
+			</div>
+
+			<div style="margin-top: 2em">
+				<ion-button (click)="finishRide()" class="social-auth-btn facebook-auth-btn"
+							expand="block" color="twitter">
+					Finish ride
+				</ion-button>
+			</div>
+
+		</div>
+
+	</ion-card>
+</ion-content>
+
+<ion-content *ngIf="!isActive" style="height: 100%">
+
+	<ion-card>
+		<h3>Order: {{ this.data.orderData.id }}</h3>
+
+		<div>
+			Från: {{ this.data.orderData.from_formatted }}
+		</div>
+
+		<div>
+			Till: {{ this.data.orderData.to_formatted }}
+		</div>
+
+		<div>
+			<ion-label></ion-label>
+
+			<div *ngIf="!customerInCar">
+				<ion-button (click)="accept()" type="button" class="social-auth-btn facebook-auth-btn" expand="block"
+							color="facebook">
+					Accept
+				</ion-button>
+			</div>
+
+			<div style="margin-top: 2em">
+				<ion-button (click)="deny()" class="social-auth-btn facebook-auth-btn" expand="block" color="danger">
+					Deny
+				</ion-button>
+			</div>
+
+		</div>
+
+	</ion-card>
+
+</ion-content>
